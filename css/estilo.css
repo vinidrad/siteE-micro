@@ -588,7 +588,7 @@ main {
 
 .btn-principal:hover {
     background: #b28d1d;
-    transform: translateY(-3px);
+   
 }
 
 .btn-whats {
@@ -608,7 +608,7 @@ main {
 }
 
 .btn-whats:hover {
-    transform: scale(1.08);
+    
     background: #1ebe5d;
 }
 
