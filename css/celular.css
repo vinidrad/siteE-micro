@@ -1,0 +1,308 @@
+.menu-toggle{
+    display: none;
+    font-size: 28px;
+    color: white;
+    cursor: pointer;
+    
+}
+
+/* MOBILE */
+@media (max-width: 768px){
+
+    .menu{
+        width: 90%;
+    }
+
+    .opcoes{
+        display: none; 
+        position: absolute;
+        top: 70px;
+        right: 0;
+        flex-direction: column;
+        width: 200px;
+        padding: 15px;
+        border-radius: 10px;
+        background: rgba(255, 255, 255, 0.397);
+        box-shadow: 0 8px 32px rgba(0,0,0,0.2);
+        
+    }
+
+
+    .opcoes.ativo{
+        display: flex; 
+    }
+
+    .menu-toggle{
+        display: block; 
+    }
+}
+
+@media (max-width: 768px) {
+  .titulos {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .bloco {
+    width: 90%;
+  }
+}
+
+
+@media (max-width: 768px) {
+  .card {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .ajuste {
+    padding: 0 18px;
+  }
+}
+
+@media (max-width: 768px) {
+  .servs {
+    justify-content: flex-start; /* começa da esquerda */
+    padding-left: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .btn {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .conteudo {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .formulario {
+    width: 100%;
+  }
+}
+
+
+@media (max-width: 900px) {
+
+  .sec-wrapper {
+    flex-direction: column;
+    text-align: center;
+    gap: 40px;
+  }
+
+  .sec-texto h1 {
+    font-size: 30px;
+  }
+
+  .sec-texto p {
+    font-size: 16px;
+  }
+
+  .sec-form {
+    width: 100%;
+    align-items: center;
+  }
+
+  .sec-form input,
+  .sec-form textarea {
+    width: 90%;
+    max-width: 400px;
+  }
+
+  .sec-form button {
+    width: 90%;
+    max-width: 400px;
+  }
+}
+
+@media (max-width: 500px) {
+
+  .sec-texto h1 {
+    font-size: 24px;
+  }
+
+  .sec-contato {
+    height: auto;
+    padding: 50px 0;
+  }
+
+  .sec-bg {
+    height: 100%;
+  }
+}
+
+
+
+@media (max-width: 900px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .logos-wrapper,
+  .texto {
+    width: 100%;
+  }
+
+  .texto {
+    text-align: center;
+  }
+}
+
+/* RESPONSIVO */
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
+
+    .social-icons {
+        margin-top: 20px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media(max-width: 900px){
+    .conteudo-sobre{
+        flex-direction: column;
+    }
+
+    .texto-sobre h1{
+        font-size: 42px;
+    }
+
+    .texto-sobre h3{
+        font-size: 28px;
+    }
+
+    .texto-sobre p{
+        font-size: 18px;
+    }
+
+    .item span{
+        font-size: 42px;
+    }
+
+    .badge{
+        left: 20px;
+        bottom: 20px;
+        width: 120px;
+    }
+}
+
+
+
+
+
+
+@media (max-width: 768px) {
+  .carousel {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    height: auto;
+  }
+
+  .card {
+    position: relative !important;
+    width: 100% !important;
+    height: 70px;
+    min-width: 100%;
+    border-radius: 14px;
+    transform: none !important;
+    left: auto !important;
+    right: auto !important;
+    top: auto !important;
+    transition: 0.4s;
+      overflow: hidden;
+  }
+
+  .card-top {
+    font-size: 15px;
+    padding: 22px 20px;
+  }
+
+  .card-icon {
+    font-size: 22px;
+    right: 20px;
+    left: auto;
+    top: 22px;
+    bottom: auto;
+  }
+
+  .card-info {
+    height: 0;
+    opacity: 0;
+    overflow: hidden;
+    transition: 0.3s;
+    background: white;
+    color: #222;
+  }
+
+  .card.expanded {
+      height: 160px !important;
+  }
+
+  .card.expanded .card-info {
+     height: auto !important;
+  opacity: 1 !important;
+  padding: 12px 20px;
+  display: block;
+  }
+
+  .bsmall-left,
+  .small-left,
+  .medium-left,
+  .active,
+  .medium-right,
+  .small-right,
+  .bsmall-right {
+    all: unset;
+  }
+}
+
+/* parcerias */
+@media (max-width: 768px) {
+  /* esconde texto */
+  .textt {
+    display: none;
+  }
+
+  /* deixa layout em coluna */
+  .containery {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  /* carrossel ocupa toda largura */
+  .logos-wrapper {
+    width: 100%;
+  }
+
+  /* centraliza título */
+  .fundo h2 {
+    text-align: center;
+    margin-left: 0;
+    margin-bottom: 25px;
+  }
+
+  /* logos menores no celular */
+  .logos img {
+    width: 70px;
+  }
+}

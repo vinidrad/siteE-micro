@@ -1,0 +1,25 @@
+.animar {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: 0.6s ease;
+}
+
+.animar.ativo {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.animar2 {
+  opacity: 0;
+  transform: scale(0.8);
+  transition: all 0.6s ease;
+}
+
+.animar2.ativo {
+  opacity: 1;
+  transform: scale(1);
+}
+
+
+
+
