@@ -121,8 +121,21 @@
   opacity: 1;
 }
 
+.card a {
+  position: absolute;
+  bottom: 25px;
+  right: 19px;
 
-
+  padding: 8px 12px;
+ 
+  color: white;
+  text-decoration: none;
+  
+  
+}
+.card a:hover {
+  color: #273A82;
+}
 
 @media (max-width: 480px) {
   .card {

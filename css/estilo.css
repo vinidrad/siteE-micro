@@ -133,6 +133,52 @@ body{
   margin: 0;
 }
 
+.botoees {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-top: 30px;
+}
+
+.btn-principal {
+   background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 8px 32px rgba(0,0,0,0.2);
+    color: white;
+    text-decoration: none;
+    padding: 17px 33px;
+    border-radius: 40px;
+    font-size: 16px;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.btn-principal:hover {
+    background: #F2CB53;
+
+}
+
+.btn-whats {
+    width: 58px;
+    height: 58px;
+  background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 8px 32px rgba(0,0,0,0.2);
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    font-size: 28px;
+    transition: 0.3s;
+}
+
+.btn-whats:hover {
+    
+    background: #1ebe5d;
+}
+
 
 
 /* sobre a empresa */
@@ -564,52 +610,5 @@ main {
 }
 
 
-
-
-.botoees {
-    display: flex;
-    align-items: center;
-    gap: 15px;
-    margin-top: 30px;
-}
-
-.btn-principal {
-   background: rgba(255, 255, 255, 0.15);
-    backdrop-filter: blur(10px);
-    box-shadow: 0 8px 32px rgba(0,0,0,0.2);
-    color: white;
-    text-decoration: none;
-    padding: 17px 33px;
-    border-radius: 40px;
-    font-size: 16px;
-    font-weight: 600;
-    transition: 0.3s;
-}
-
-.btn-principal:hover {
-    background: #b28d1d;
-    transform: translateY(-3px);
-}
-
-.btn-whats {
-    width: 58px;
-    height: 58px;
-  background: rgba(255, 255, 255, 0.15);
-    backdrop-filter: blur(10px);
-    box-shadow: 0 8px 32px rgba(0,0,0,0.2);
-    color: white;
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-decoration: none;
-    font-size: 28px;
-    transition: 0.3s;
-}
-
-.btn-whats:hover {
-    transform: scale(1.08);
-    background: #1ebe5d;
-}
 
 
