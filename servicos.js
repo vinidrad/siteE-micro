@@ -120,3 +120,27 @@ function handleSwipe() {
 }
 
 
+
+
+const abrir = document.querySelector(".abrir-popup");
+const popupDw = document.getElementById("popup");
+const fechar = document.getElementById("fechar");
+
+abrir.addEventListener("click", function(e) {
+  e.preventDefault();
+  popupDw.style.display = "block";
+});
+
+fechar.addEventListener("click", function() {
+  popupDw.style.display = "none";
+});
+
+window.addEventListener("click", function(e) {
+  if (e.target === popupDw) {
+    popupDw.style.display = "none";
+  }
+});
+
+
+
+

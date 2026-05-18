@@ -76,7 +76,7 @@
 <div class="container">
   <div class="slides">
     <img src="img/Gemini_Generated_Image_yw4holyw4holyw4h.png" class="ativo">
-    <img src="img/ChatGPT Image 19 de abr. de 2026, 10_25_42.png">
+    <img src="img/bg-contato.png">
     <img src="img/WhatsApp Image 2026-04-14 at 14.38.44.jpeg">
   </div>
 
@@ -172,12 +172,32 @@
     </div>
 
     <div class="card" data-title="Antivírus" data-info="Proteção e instalação do ESET NOD32.">
-      <div class="card-top">ANTIVÍRUS ESET NOD32</div>
-      
-      <div class="card-icon"><i class="fa-solid fa-shield-virus"></i></div>
-      <div class="card-info"></div>
-      <a href="">download</a>
-    </div>
+  <div class="card-top">ANTIVÍRUS ESET NOD32</div>
+  
+  <div class="card-icon">
+    <i class="fa-solid fa-shield-virus"></i>
+  </div>
+
+  <div class="card-info"></div>
+  
+  <a href="#" class="abrir-popup">download</a>
+</div>
+
+<!-- Popup -->
+<div id="popup" class="popup ">
+  <div class="popup-content">
+    <span id="fechar">&times;</span>
+    <h2>DOWNLOAD</h2>
+
+    <a href="https://download.eset.com/com/eset/apps/home/eav/windows/latest/eav_nt32.exe" target="_blank">
+      ESET 32 BITS
+    </a>
+
+    <a href="https://download.eset.com/com/eset/apps/home/eav/windows/latest/eav_nt64.exe" target="_blank">
+      ESET 64 BITS
+    </a>
+  </div>
+</div>
 
     <div class="card" data-title="Impressoras" data-info="Correção de falhas, recarga e manutenção preventiva.">
       <div class="card-top">IMPRESSORAS</div>
@@ -215,7 +235,7 @@
 <section id="contatos"></section>
 <section id="Contatos"  class="sec-contato">
 
-    <img src="img/ChatGPT Image 19 de abr. de 2026, 10_25_42.png" class="sec-bg">
+    
 
   <div class="sec-overlay"></div>
 
@@ -225,29 +245,22 @@
       <h1>Atendimento de segunda a sexta</h1>
       <p>garantimos serviços de qualidade para atender você da melhor forma.</p>
     </div>
+<form
+  id="contatoForm"
+  action="https://formsubmit.co/viniam2006@gmail.com"
+  method="POST"
+  class="sec-form animar"
+>
+  <input type="text" placeholder="Nome" name="name" required>
+  <input type="email" placeholder="E-mail" name="email" required>
+  <textarea name="message" placeholder="Mensagem" required></textarea>
 
-  <form class="sec-form animar"
-      action="https://formsubmit.co/contato@emicro.com.br"
-      method="POST"
-      class="form"
-    >
-      <label for="name"></label>
-      <input type="text" placeholder="Nome" name="name" id="name" required />
-      <label for="email"></label>
-      <input type="email"   placeholder="E-mail" name="email" id="email" required />
-      <label for="message"></label>
-      <textarea name="message"  placeholder="Mensagem" id="message" required></textarea>
-      <input type="hidden" name="_captcha" value="false" />
-      <input
-        type="hidden"
-        name="_next"
-        value="https://yourdomain.co/thanks.html"
-      />
-      <button type="submit">Enviar</button>
-    </form>
+  <input type="hidden" name="_captcha" value="false">
+  <input type="hidden" name="_next" value="http://127.0.0.1:5500/index.html#Contatos">
+  <button type="submit">Enviar</button>
+</form>
 
   </div>
-
 </section>
 
 <section class="mapa animar2">
@@ -386,7 +399,7 @@
  <script src="slide.js"></script>
  <script src="anima.js"></script>
  <script src="servicos.js"></script>
-
+<script src="email.js"></script>
 
 <script>
     function toggleMenu() {

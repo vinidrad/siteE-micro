@@ -168,3 +168,49 @@
   transform: scale(1.12) rotate(-5deg);
   color: rgba(255, 255, 255, 0.35);
 }
+
+
+
+
+.popup {
+  display: none;
+  position: fixed;
+  inset: 0;
+  z-index: 999;
+}
+
+.popup H2{
+
+  color: #273A82;
+}
+
+.popup-content {
+  width: 320px;
+ background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 8px 32px rgba(0,0,0,0.2);
+  color: white;
+  padding: 25px;
+  border-radius: 12px;
+  text-align: center;
+  margin: 5% auto;
+  position: relative;
+}
+
+.popup-content a {
+  display: block;
+  margin: 12px 0;
+  padding: 12px;
+  background: #273A82;
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+}
+
+#fechar {
+  position: absolute;
+  right: 15px;
+  top: 10px;
+  font-size: 25px;
+  cursor: pointer;
+}
