@@ -48,6 +48,29 @@ body{
     transform: translateY(20px);
 }
 /* MENU */
+
+.logo{
+    position: relative;
+    display:flex;
+    align-items:center;
+}
+
+.logo img{
+    transition:.35s;
+}
+
+.logo-escura{
+    position:absolute;
+    opacity:0;
+}
+
+header.dark .logo-clara{
+    opacity:0;
+}
+
+header.dark .logo-escura{
+    opacity:1;
+}
 .menu{
     position: fixed;
     top: 20px;

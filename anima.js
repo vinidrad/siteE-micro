@@ -73,3 +73,26 @@ function mostrar(id, botao){
 
     botao.classList.add("active");
 }
+
+
+
+const header = document.querySelector("header");
+const darkSection = document.querySelector(".dark-section");
+
+const observer = new IntersectionObserver((entries) => {
+
+    entries.forEach(entry => {
+
+        if (entry.isIntersecting) {
+            header.classList.add("dark");
+        } else {
+            header.classList.remove("dark");
+        }
+
+    });
+
+}, {
+    threshold: 0.2
+});
+
+observer.observe(darkSection);
