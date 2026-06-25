@@ -19,9 +19,11 @@ window.addEventListener("scroll", aparecer);
 aparecer();
 
 tsParticles.load("particles", {
+    fullScreen: {
+        enable: false
+    },
 
     particles: {
-
         number: {
             value: 150
         },
@@ -55,3 +57,19 @@ tsParticles.load("particles", {
         }
     }
 });
+
+
+
+function mostrar(id, botao){
+
+    document.querySelectorAll(".info")
+        .forEach(el => el.classList.remove("ativo"));
+
+    document.getElementById(id)
+        .classList.add("ativo");
+
+    document.querySelectorAll(".tab")
+        .forEach(btn => btn.classList.remove("active"));
+
+    botao.classList.add("active");
+}
