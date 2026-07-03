@@ -116,3 +116,77 @@ setInterval(()=>{
     current = (current + 1) % cards.length;
     update();
 },5000);
+
+
+
+const itens = document.querySelectorAll(".item");
+const barra = document.querySelector(".progresso");
+const barraContainer = document.querySelector(".barra");
+
+let progresso = 0;
+
+const duracaoTotal = 20600; // tempo total do ciclo
+const step = 50;
+
+let intervalo;
+
+// função para ativar conteúdo
+function ativar(index){
+  itens.forEach(i => i.classList.remove("ativo"));
+  itens[index].classList.add("ativo");
+}
+
+// loop principal
+function iniciar(){
+
+  clearInterval(intervalo);
+
+  intervalo = setInterval(() => {
+
+    progresso += (step / duracaoTotal) * 100;
+
+    barra.style.width = progresso + "%";
+
+    if(progresso < 30){
+      ativar(0);
+    }
+    else if(progresso < 60){
+      ativar(1);
+    }
+    else if(progresso < 90){
+      ativar(2);
+    }
+    else{
+      ativar(3);
+    }
+
+    if(progresso >= 100){
+      progresso = 0;
+    }
+
+  }, step);
+}
+
+// clique na barra
+barraContainer.addEventListener("click", (e) => {
+
+  const rect = barraContainer.getBoundingClientRect();
+  const x = e.clientX - rect.left;
+
+  const porcento = x / rect.width;
+
+  progresso = porcento * 100;
+
+  barra.style.width = progresso + "%";
+
+  if(progresso < 25) ativar(0);
+  else if(progresso < 50) ativar(1);
+  else if(progresso < 75) ativar(2);
+  else ativar(3);
+
+  iniciar(); // reinicia o fluxo corretamente
+});
+
+// start
+ativar(0);
+iniciar();
