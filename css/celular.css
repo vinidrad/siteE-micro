@@ -212,3 +212,85 @@
     width: 70px;
   }
 }
+
+
+@media(max-width:900px){
+
+.eset{
+
+    justify-content:center;
+
+    text-align:center;
+
+    background-position:75% center;
+
+}
+
+.eset-conteudo{
+
+    width:100%;
+
+    max-width:600px;
+
+}
+
+.eset h1{
+
+    font-size:42px;
+
+}
+
+.eset-botoes{
+
+    flex-direction:column;
+
+}
+
+.btn-download,
+.btn-saiba{
+
+    display:block;
+
+}
+
+.eset-info{
+
+    justify-content:center;
+
+}
+
+}
+
+@media(max-width:600px){
+
+.eset{
+
+    padding:70px 25px;
+
+    min-height:650px;
+
+    background-position:80% center;
+
+}
+
+.eset h1{
+
+    font-size:34px;
+
+}
+
+.eset p{
+
+    font-size:16px;
+
+}
+
+.eset-info{
+
+    flex-direction:column;
+
+    gap:18px;
+
+}
+
+}

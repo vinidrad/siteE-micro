@@ -209,19 +209,13 @@ background: #01014B;
 /* sobre */
 .sobre{
     padding: 100px 10%;
-    background: linear-gradient(
-        90deg,
-        #b8b8b8 0%,
-        #d9d9d9 35%,
-        #f3f3f3 70%,
-        #ffffff 100%
-    );
+  background: linear-gradient(135deg, #01014B, #020a2e);
 }
 
 .sobre h2{
     text-align:center;
     font-size:60px;
-    color:#01014B;
+    color:#ffffff;
     margin-bottom:50px;
 }
 
@@ -811,5 +805,133 @@ text-decoration:none;
 .social-icons{
     justify-content:center;
 }
+
+}
+
+.eset{
+    width:100%;
+    min-height:550px;
+    padding:50px 10%;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:40px;
+
+    background:linear-gradient(90deg,#01014B,#020A2E);
+
+    overflow:hidden;
+    box-sizing:border-box;
+}
+
+.eset-conteudo{
+    flex:1;
+    max-width:500px;
+}
+
+.eset-img{
+    flex:1;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.eset-img img{
+    width:90%;
+    max-width:380px;
+    height:auto;
+    object-fit:contain;
+    display:block;
+}
+
+.categoria{
+
+    color:#F2CB53;
+
+    font-size:14px;
+
+    letter-spacing:4px;
+
+    font-weight:bold;
+
+}
+.eset h1{
+    color:white;
+    font-size:45px;
+    margin:15px 0;
+}
+
+.eset p{
+    color:#d6def7;
+    line-height:1.6;
+    font-size:16px;
+    margin-bottom:25px;
+}
+
+.eset-botoes{
+    display:flex;
+    gap:15px;
+    margin-bottom:30px;
+}
+
+.btn-download,
+.btn-saiba{
+    padding:14px 28px;
+}
+.btn-download:hover{
+
+    transform:translateY(-5px);
+
+}
+
+.btn-saiba{
+
+    background:rgba(255,255,255,.12);
+
+    backdrop-filter:blur(10px);
+
+    color:white;
+
+    padding:18px 35px;
+
+    border-radius:40px;
+
+    text-decoration:none;
+
+}
+
+.btn-saiba:hover{
+
+    background:rgba(255,255,255,.25);
+
+}
+
+.eset-info{
+
+    display:flex;
+
+    gap:35px;
+
+    flex-wrap:wrap;
+
+    color:white;
+
+}
+
+.eset-info div{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:10px;
+
+}
+
+.eset-info i{
+
+    color:#F2CB53;
+
+    font-size:20px;
 
 }
