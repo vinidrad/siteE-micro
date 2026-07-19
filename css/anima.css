@@ -93,3 +93,111 @@ iframe{
   from{opacity:0; transform:translateY(10px);}
   to{opacity:1; transform:translateY(0);}
 }
+
+
+/* =========================
+   TABLET
+========================= */
+
+@media (max-width:900px){
+
+    .hero{
+        height:100vh;
+        padding:0 30px;
+        text-align:center;
+    }
+
+
+    .content h1{
+        font-size:55px;
+    }
+
+
+    .content p{
+        font-size:18px;
+        max-width:600px;
+    }
+
+
+    .btn-outline,
+    .btn-primary{
+        padding:15px 35px;
+    }
+
+}
+
+
+
+/* =========================
+   CELULAR
+========================= */
+
+@media (max-width:600px){
+
+    .hero{
+        min-height:100vh;
+        height:auto;
+        padding:120px 20px 80px;
+        box-sizing:border-box;
+    }
+
+
+    .content{
+        width:100%;
+    }
+
+
+    .content h1{
+        font-size:38px;
+        line-height:1.15;
+        margin-bottom:20px;
+    }
+
+
+    .content p{
+        font-size:16px;
+        line-height:1.6;
+        margin-bottom:30px;
+    }
+
+
+    .buttons{
+        flex-direction:column;
+        align-items:center;
+        gap:15px;
+    }
+
+
+    .btn-outline,
+    .btn-primary{
+        width:80%;
+        text-align:center;
+        padding:15px 20px;
+    }
+
+}
+
+
+
+/* =========================
+   CELULAR PEQUENO
+========================= */
+
+@media (max-width:400px){
+
+    .content h1{
+        font-size:32px;
+    }
+
+
+    .content p{
+        font-size:15px;
+    }
+
+
+    .btn-outline,
+    .btn-primary{
+        width:90%;
+    }
+
+}

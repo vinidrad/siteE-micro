@@ -1,3 +1,5 @@
+
+
 .menu-toggle{
     display: none;
     font-size: 28px;
@@ -6,7 +8,7 @@
     
 }
 
-/* MOBILE */
+
 @media (max-width: 768px){
 
     .menu{
@@ -14,17 +16,27 @@
     }
 
     .opcoes{
-        display: none; 
-        position: absolute;
-        top: 70px;
-        right: 0;
-        flex-direction: column;
-        width: 200px;
-        padding: 15px;
-        border-radius: 10px;
-        background: rgba(255, 255, 255, 0.397);
-        box-shadow: 0 8px 32px rgba(0,0,0,0.2);
-        
+           position:absolute;
+        top:60px;
+        right:0;
+
+        width:100%;
+        max-width:250px;
+
+        display:none;
+        flex-direction:column;
+        align-items:center;
+
+        gap:20px;
+
+        padding:20px;
+
+        box-sizing:border-box;
+
+        border-radius:20px;
+
+        background:rgba(255,255,255,0.15);
+        backdrop-filter:blur(10px);
     }
 
 
@@ -62,7 +74,7 @@
 
 @media (max-width: 768px) {
   .servs {
-    justify-content: flex-start; /* começa da esquerda */
+    justify-content: flex-start;
     padding-left: 20px;
   }
 }
@@ -134,20 +146,6 @@
   }
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 @media(max-width: 900px){
     .conteudo-sobre{
         flex-direction: column;
@@ -177,37 +175,27 @@
 }
 
 
-
-
-
-
-
-/* parcerias */
 @media (max-width: 768px) {
-  /* esconde texto */
+
   .textt {
     display: none;
   }
 
-  /* deixa layout em coluna */
   .containery {
     flex-direction: column;
     gap: 20px;
   }
 
-  /* carrossel ocupa toda largura */
   .logos-wrapper {
     width: 100%;
   }
 
-  /* centraliza título */
   .fundo h2 {
     text-align: center;
     margin-left: 0;
     margin-bottom: 25px;
   }
 
-  /* logos menores no celular */
   .logos img {
     width: 70px;
   }
@@ -292,5 +280,147 @@
     gap:18px;
 
 }
+
+}
+
+
+/* =========================
+   TABLET
+========================= */
+
+@media (max-width: 900px){
+
+    .servicos{
+        padding-top:60px;
+        padding-left:20px;
+        padding-right:20px;
+    }
+
+
+    .titulo-servicos h1{
+        font-size:3rem;
+    }
+
+
+    .titulo-servicos h2{
+        font-size:1rem;
+        max-width:600px;
+    }
+
+
+    .carousel{
+        width:100%;
+        height:400px;
+    }
+
+
+    .card{
+        width:240px;
+        height:300px;
+        padding:25px;
+    }
+
+}
+
+
+
+/* =========================
+   CELULAR
+========================= */
+
+@media (max-width:600px){
+
+    .servicos{
+        min-height:auto;
+        padding-top:50px;
+        overflow:hidden;
+    }
+
+
+    .categoria{
+        font-size:12px;
+        letter-spacing:2px;
+    }
+
+
+    .titulo-servicos{
+        margin-bottom:30px;
+        padding:0 15px;
+    }
+
+
+    .titulo-servicos h1{
+        font-size:2.2rem;
+    }
+
+
+    .titulo-servicos h2{
+        font-size:.95rem;
+        line-height:1.6;
+    }
+
+
+    .carousel{
+        width:100%;
+        height:360px;
+        perspective:900px;
+    }
+
+
+    .card{
+        width:220px;
+        height:280px;
+
+        padding:20px;
+
+        border-radius:18px;
+    }
+
+
+    .card h3{
+        font-size:18px;
+    }
+
+
+    .card p{
+        font-size:14px;
+        line-height:1.5;
+    }
+
+
+    .linha{
+        height:4px;
+        margin:15px 0 20px;
+    }
+
+
+    .dots{
+        margin-top:20px;
+    }
+
+}
+
+
+
+/* =========================
+   CELULAR PEQUENO
+========================= */
+
+@media (max-width:400px){
+
+    .titulo-servicos h1{
+        font-size:2rem;
+    }
+
+
+    .carousel{
+        height:340px;
+    }
+
+
+    .card{
+        width:200px;
+        height:260px;
+    }
 
 }
