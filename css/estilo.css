@@ -124,6 +124,14 @@ background: #01014B;
     align-items:center;
 }
 
+
+.hero-logo{
+    width: 550px;
+    max-width: 90%;
+    height: auto;
+    margin-bottom: 30px;
+}
+
 #particles{
     position:absolute;
     inset:0;
@@ -136,27 +144,33 @@ background: #01014B;
 }
 
 .content{
-    position:relative;
-    z-index:2;
+    position: relative;
+    z-index: 2;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
 }
 
-.content h1{
-    color:white;
-    font-size:72px;
-    line-height:1.05;
-    font-weight:800;
 
-    margin-bottom:25px;
+.content h1{
+    color: #D9B547;
+    font-size: 22px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    margin-bottom: 15px;
 }
 
 .content p{
-    color:#9ea5c2;
-    font-size:20px;
-    line-height:1.8;
+    color: #9ea5c2;
+    font-size: 20px;
+    line-height: 1.8;
 
-    max-width:700px;
-    margin:auto;
-    margin-bottom:40px;
+    max-width: 700px;
+    text-align: center;
+    margin: 0 auto 40px;
 }
 
 .buttons{
@@ -203,11 +217,23 @@ background: #01014B;
   background: linear-gradient(135deg, #01014B, #020a2e);
 }
 
+.sobre span{
+    display: block;
+    text-align: center;
+    color: #D9B547;
+    font-size:.9rem;
+    font-weight: 700;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    margin-bottom: 1px;
+    
+}
+
 .sobre h2{
-    text-align:center;
-    font-size:60px;
-    color:#ffffff;
-    margin-bottom:50px;
+    text-align: center;
+    font-size: 60px;
+    color: #fff;
+    margin-bottom: 50px;
 }
 
 .tabs{
