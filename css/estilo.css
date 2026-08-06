@@ -410,13 +410,34 @@ background: #01014B;
     transition:.7s ease;
 
     padding:30px;
-
-    background:#121a30;
     border-radius:20px;
     border:1px solid rgba(0,110,255,.2);
 
     color:white;
+    overflow:hidden;
+
+    /* imagem */
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
 }
+
+/* camada escura para facilitar a leitura */
+.card::before{
+    content:"";
+    position:absolute;
+    inset:0;
+    background:rgba(0,0,0,.65);
+    z-index:0;
+}
+
+.card h3,
+.card p,
+.card .linha{
+    position: relative;
+    z-index: 1;
+}
+
 .dots{
     display:flex;
     justify-content:center;
