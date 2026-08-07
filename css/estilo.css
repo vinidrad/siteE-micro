@@ -282,7 +282,7 @@ background: #01014B;
     max-width:900px;
     margin:auto;
 
-    background:rgba(255,255,255,.8);
+    background: linear-gradient(135deg, #a6a6a6, #ffffff);
     backdrop-filter:blur(10px);
 
     padding:60px;
@@ -467,14 +467,7 @@ background: #01014B;
 
 .cta{
     padding: 100px 10%;
-background: linear-gradient(
-    90deg,
-    #b9b9b9 0%,
-    #c8c8c8 20%,
-    #d7d7d7 45%,
-    #ececec 75%,
-    #ffffff 100%
-);
+background: linear-gradient(135deg, #a6a6a6, #ffffff);
 padding:100px 8%;
 text-align:center;
 }
