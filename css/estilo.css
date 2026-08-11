@@ -800,33 +800,37 @@ text-decoration:none;
     margin-right:10px;
 }
 
-.social-icons{
-    display:flex;
-    gap:15px;
+.social-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
 }
 
-.social-icons a{
-    width:45px;
-    height:45px;
+.social-icons a {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background: #0b1f68;
 
-    border-radius:50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
-    background:#0b1f68;
-
-    display:flex;
-    justify-content:center;
-    align-items:center;
-
-    color:white;
-
-    transition:.3s;
+    color: white;
+    text-decoration: none;
+    margin-bottom: 0;
+    transition: .3s;
 }
 
-.social-icons a:hover{
-    background:#D9B547;
-    color:#08106B;
+.social-icons a:hover {
+    background: #D9B547;
+    color: #08106B;
+    transform: translateY(-5px);
+}
 
-    transform:translateY(-5px);
+.social-icons i {
+    margin-right: 0;
 }
 
 .footer-bottom{
