@@ -3,12 +3,12 @@
 <head>
 
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="img/icon-dourado.png">
     <link rel="stylesheet" href="css/estilo.css">
     <link rel="stylesheet" href="css/celular.css">
     <link rel="stylesheet" href="css/anima.css">
-    <link  rel="stylesheet" href="css/servicos.css">
+  
 
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
@@ -78,15 +78,15 @@
 
     <div class="content">
 
-     <h1>Bem-vindos</h1>
+     <h1 class="animar">Bem-vindos</h1>
 
-<img src="img/logo-cabecario1.png" alt="E-micro" class="hero-logo">
+<img src="img/logo-cabecario1.png" alt="E-micro" class="hero-logo animar">
 
-<p>
+<p class="animar">
     Especializados na área de tecnologia trazendo soluções para a sua empresa e residência.
 </p>
 
-        <div class="buttons">
+        <div class="buttons animar">
 
             <a href="#Contatos" class="btn-outline">
                 Fale Conosco
@@ -424,18 +424,31 @@
       <p>garantimos serviços de qualidade para atender você da melhor forma.</p>
     </div>
 <form
-  id="contatoForm"
-  action="https://formsubmit.co/viniam2006@gmail.com"
-  method="POST"
-  class="sec-form animar"
+    id="contatoForm"
+    action="https://formsubmit.co/contato@emicro.com.br"
+    method="POST"
+    class="sec-form animar"
 >
-  <input type="text" placeholder="Nome" name="name" required>
-  <input type="email" placeholder="E-mail" name="email" required>
-  <textarea name="message" placeholder="Mensagem" required></textarea>
+    <input type="text" placeholder="Nome" name="name" required>
 
-  <input type="hidden" name="_captcha" value="false">
-  <input type="hidden" name="_next" value="http://127.0.0.1:5500/index.html#Contatos">
-  <button type="submit">Enviar</button>
+    <input type="email" placeholder="E-mail" name="email" required>
+
+    <textarea
+        name="message"
+        placeholder="Mensagem"
+        required
+    ></textarea>
+
+    <input type="hidden" name="_captcha" value="false">
+    <input type="hidden" name="_subject" value="Nova mensagem pelo site">
+
+    <input
+        type="hidden"
+        name="_next"
+        value="https://www.seusite.com.br/index.html#Contatos"
+    >
+
+    <button type="submit">Enviar</button>
 </form>
 
   </div>
